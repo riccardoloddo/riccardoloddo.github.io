@@ -12,10 +12,11 @@ let mouse = {
   radius: (canvas.height/80) * (canvas.width/80)
 }
 
-window.addEventListener("mousemove",function(event) {
+window.addEventListener("mousemove",function(event)
+{
     mouse.x = event.x;
     mouse.y = event.y;
-  }
+}
 );
 
 //create particles
@@ -77,7 +78,7 @@ class Particle {
 function init() {
   particlesArray = [];
   let numberOfParticles = (canvas.height * canvas.width) / 9000;
-  for(let i = 0; i < numberOfParticles*2; i++) { /*Per mettere piu particelle aumetare numberOfParticles*/
+  for(let i = 0; i < numberOfParticles; i++) { /*Per mettere piu particelle aumetare numberOfParticles*/
     let size = (Math.random() * 5) + 1;
     let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
     let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
