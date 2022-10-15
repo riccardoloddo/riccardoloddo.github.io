@@ -1,0 +1,115 @@
+
+
+<!--
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>RL Physics</title>
+    <link rel="stylesheet" href="css/Physics.css">
+  </head>
+  <body>
+    <canvas id="canvas1"></canvas>
+    <h2 class="title">Astrophysics laboratory</h2>
+    <p>Here you will find some examples of reports written by students from past years. Some of them will be written in English and others in Italian and I apologize for this dualism of language. In addition there will also be problems developed in class and which will be very useful for the preparation of the exam. My advice is to understand the theory very well (once you get into the concepts it will be much easier) and try to implement the code yourself. The idea of this astronomy course is to become familiar with python and the Bayesian models used so it is <b> highly recommended not to copy the code or the relationships but only to take inspiration </b>. However I think that this kind of thing comes out much clearer with a number of examples developed.
+    <br> The five experiments to be carried out were performed simultaneously by 7 different groups. Those reported here were rated as the best.
+    </p>
+    <div class="row">
+      <div class="column1"><b>Experiences:</b></div>
+      <div class="column2"><b>Code:</b></div>
+      <div class="column4"><b>Vote:</b></div>
+      <div class="column3"><b>Problem and theory:</b></div>
+    </div>
+    <div class="column1">
+      <ul id="horizontal-list">
+        <li><a href="resources/Relazione_1.pdf">Experience 1</a></li>
+        <li><a href="resources/Relazione_2.pdf">Experience 2</a></li>
+        <li><a href="resources/Relazione_3.pdf">Experience 3</a></li>
+        <li><a href="resources/Relazione_4.pdf">Experience 4</a></li>
+        <li><a href="resources/Relazione_5.pdf">Experience 5</a></li>
+      </ul>
+    </div>
+    <div class="column2">
+      <ul id="horizontal-list">
+        <li><a href="resources/Exp_1.zip">Code 1</a></li>
+        <li><a href="resources/Exp_2.zip">Code 2</a></li>
+        <li><a href="resources/Exp_3.zip">Code 3</a></li>
+        <li><a href="resources/Exp_4.zip">Code 4</a></li>
+        <li><a href="resources/Exp_5.zip">Code 5</a></li>
+      </ul>
+    </div>
+    <div class="column4">
+      <ul id="horizontal-list">
+        <li>Vote: 8.0/10</li>
+        <li>Vote: 7.5/10</li>
+        <li>Vote: 8.0/10</li>
+        <li>Vote: 6.5/10</li>
+        <li>Vote: 8.5/10</li>
+      </ul>
+    </div>
+    <div class="column3">
+      <ul id="horizontal-list">
+        <li><a href="resources/Problemi.pdf">Problem</a></li>
+      </ul>
+    </div>
+
+
+  <p class="wow">A special thanks goes to all those who have contributed to this path of growth and innovation. In particular:
+  Nicola Bianchetti, Matteo Bianchi, Diana Capelli, Dalila Signorelli, Riccardo Rusnati, Viola Cazzaniga, Gianluca Scarpe, Nicole Grillo, Margherita Pini, Federico Riboldi, Francesca Brivio.</p>
+
+    <script src="js/Physics.js"></script>
+  </body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TNDS</title>
+    <link rel="stylesheet" href="css/tnds.css">
+  </head>
+  <body>
+    <section>
+      <p class = "troglod"> TNDS</p>
+      <br>
+      <p class="text">In this section you can find the solved exams related to the TNDS course. In my opinion this exam is very useful so the idea is to try the exams yourself and if things don't return you can look here. In particular you will find zip folders containing each exam test. All codes with an asterisk (*) mean that some points are missing that I was unable to make.
+                      <b>  Warning </b>: they are definitely not the best programs. They could be written much neater and more elegant. Furthermore, the computational time (however small) could also be better. However, they work and you can take a cue from them.
+      </p>
+    </section>
+    <div class="row">
+      <div class="column1"><b>Exam:</b></div>
+      <div class="column2"><b>Code:</b></div>
+    </div>
+    <div class="column1">
+      <ul id="horizontal-list">
+      <li><a href="resources/AppelloTNDS_20200615.pdf">15/06/2020</a></li>
+      </ul>
+    </div>
+    <div class="column1">
+      <ul id="horizontal-list">
+        <li><a href="resources/15_06_2020.zip">15/06/2020</a></li>
+    
+      </ul>
+    </div>
+
+
+
+
+
+    <script>
+    //now split text into letters
+    const text = document.querySelector('.text');
+    text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+    const letters  = document.querySelectorAll('span');
+    for(let i = 0; i<letters.length; i++){
+      letters[i].addEventListener("mouseover", function(){
+        letters[i].classList.add('active')
+      })
+    }
+
+    </script>
+  </body>
+</html>

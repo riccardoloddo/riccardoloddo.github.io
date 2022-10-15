@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+section
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background: #111;
+  overflow: hidden;
+}
+section .troglod
+{
+  position: fixed;
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+  font-style: italic;
+  margin-top: -200px;
+}
+section .text
+{
+  position: relative;
+  color: #fff;
+  margin: 30px;
+  max-width: 1066px;
+  user-select: none;
+  font-size: 1em;
+  font-style: italic;
+}
+section .text span{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+section .text span.active{
+  animation: smoke 2s linear forwards;
+  transform-origin: bottom;
+}
+@keyframes smoke
+{
+  0%
+  {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+  }
+  50%{
+    opacity: 1;
+    pointer-events: none;
+  }
+  100%
+  {
+    opacity: 0;
+    filter: blur(20px);
+    transform: translateX(300px) translateY(-300px) rotate(720deg) scale(4);
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  text-align: center;
+  margin-top: 40px;
+}
+.column2 {
+  float: left;
+  width: 50%;
+  text-align: center;
+  margin-top: 40px;
+}
