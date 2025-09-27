@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body
+{
+  background: #0a2a43;
+  min-height: 1500px;
+}
+p{
+  color: #fff;
+}
+section
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:before
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #0a2a43, transparent);
+  z-index: 10000;
+}
+section:after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #0a2a43, transparent);
+  z-index: 10000;
+  mix-blend-mode: color;
+}
+section img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+#text
+{
+  position: relative;
+  color: #fff;
+  font-size: 10em;
+  z-index: 1;
+}
+#road
+{
+    z-index: 2;
+}
+
+
+/*<!--
+<br>
+<br>
+<br>
+<br>
+<!-- Lists: unordered and ordered list--
+<ul>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+  <li>List item 4</li>
+</ul>
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+  <li>List item 4</li>
+</ol>
+<!-- Table --
+
+<table>
+  <thead>
+    <tr><!-- Table row--
+      <th>Name</th>
+      <th>Email</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><!-- Table row--
+      <td>Leonardo</td>
+      <td>leo.fave@pirla.it</td>
+      <td>18</td>
+    </tr>
+  </tbody>
+</table>
+
+<br> <!-- spazio in basso --
+<hr> <!-- Linea continua --
+<br>
+<!-- Form --
+<form action="process.php" method="post">
+  <div> <!-- Serve per mandare a capo...come se fosse un blocco dentro il div --
+    <label for="">First Name</label>
+    <input type="text" name="firstName" value="">
+  </div>
+  <br>
+  <div>
+    <label for="">Last Name</label>
+    <input type="text" name="lastName" value="">
+  </div>
+  <br>
+  <div>
+    <label for="">Email</label>
+    <input type="email" name="email" value="">
+  </div>
+  <br>
+  <div>
+    <label for="">Message</label>
+    <textarea name="message"></textarea>
+  </div>
+  <br>
+  <div>
+    <label>Gender</label>
+    <select name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <br>
+  <div>
+    <label>Age:</label>
+    <input type="number" name="age" value="18">
+  </div>
+  <br>
+  <div>
+    <label>Birthday:</label>
+    <input type="date" name="Birthday">
+  </div>
+  <br>
+  <input type="submit" name="sumbit" value="sumbit">
+</form>
+  <!-->*/

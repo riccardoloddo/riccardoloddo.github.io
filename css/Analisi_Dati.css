@@ -1,0 +1,73 @@
+/*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
+#canvas1{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; /*CON 100% SAREBBE TUTTA LA PAGINA*/
+  height: 60%;
+  background: radial-gradient(#000, #000);
+}
+p
+{
+  margin-left: 30px;
+  margin-right: 40px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 25px;
+}
+
+h2.title
+{
+  text-align: center; /*Mi mette il titolo al centro*/
+  margin-top: 400px; /* Mi sposta tutto gli h2 in basso*/
+}
+h3
+{
+  text-align: center; /*Mi mette il titolo al centro*/
+}
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.column1 {
+  float: left;
+  width: 33%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+ .column2 {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+/*.column3 {
+  float: left;
+  width: 33%;
+  text-align: center;
+}*/
+.column4 {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wow{
+  margin-top: 140px;
+  text-align: justify;
+}
